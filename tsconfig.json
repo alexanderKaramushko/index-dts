@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "lib/*": [
+        "./lib/*"
+      ],
+    },
+    "types": [
+      "jest",
+      "node",
+    ],
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "sourceMap": false,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "lib/**/*"
+  ],
+  "ts-node": {
+    "esm": true,
+    "compilerOptions": {
+      "module": "nodenext"
+    }
+  }
+}

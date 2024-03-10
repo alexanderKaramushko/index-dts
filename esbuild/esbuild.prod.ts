@@ -1,0 +1,24 @@
+import type { BuildOptions } from 'esbuild';
+import esbuild from 'esbuild';
+// @ts-expect-error: no d.ts
+import ignorePlugin from 'esbuild-plugin-ignore';
+import { typeScriptDeclarationsPlugin } from './plugins';
+
+const options = {
+  entryPoints: ['./lib/index.ts'],
+  outdir: 'dist',
+  bundle: true,
+  watch: false,
+  minify: true,
+  sourcemap: false,
+  target: 'esnext',
+  format: 'esm',
+  plugins: [
+    ignorePlugin([]),
+    typeScriptDeclarationsPlugin(),
+  ].filter(Boolean),
+} as BuildOptions;
+
+esbuild.build(options).catch((err) => {
+  console.error(err);
+});

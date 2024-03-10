@@ -1,0 +1,18 @@
+.env
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+.idea/
+.DS_Store
+build
+dist
+
+yarn-debug.log*
+yrn-error.log*
+yarn-error.log
+.yarn/cache
