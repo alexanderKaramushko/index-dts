@@ -1,3 +1,3 @@
 # index-dts
 
-Library to make single d.ts bundles for your packages.
+Библиотека генерации d.ts в один бандл.
