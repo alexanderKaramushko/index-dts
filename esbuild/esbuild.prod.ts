@@ -12,7 +12,7 @@ const options = {
   minify: true,
   sourcemap: false,
   target: 'esnext',
-  format: 'esm',
+  format: 'cjs',
   plugins: [
     ignorePlugin([]),
     typeScriptDeclarationsPlugin(),

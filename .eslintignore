@@ -4,6 +4,7 @@ dist
 .eslintrc.js
 commitlint.config.js
 jest.config.ts
+esbuild/esbuild.prod.ts
 
 *.json
 *.md

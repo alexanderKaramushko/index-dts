@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+tests/**/*/node_modules
+tests/**/*/yarn.lock
 
 # testing
 /coverage
@@ -16,3 +18,5 @@ yarn-debug.log*
 yrn-error.log*
 yarn-error.log
 .yarn/cache
+
+
