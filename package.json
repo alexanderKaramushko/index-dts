@@ -28,7 +28,7 @@
   },
   "scripts": {
     "prepublishOnly": "clean-package",
-    "start": "nodemon lib/index.ts",
+    "start": "cross-env NODE_ENV=develop nodemon lib/index.ts",
     "build": "ts-node esbuild/esbuild.prod.ts",
     "test": "node --expose-gc ./node_modules/.bin/jest lib --passWithNoTests",
     "test:dev": "node --expose-gc ./node_modules/.bin/jest lib --watch --passWithNoTests"
@@ -47,10 +47,13 @@
     "@testing-library/react": "12.1.2",
     "@testing-library/react-hooks": "8.0.1",
     "@testing-library/user-event": "13.5.0",
+    "@types/args": "^5.0.3",
     "@types/jest": "^29.5.12",
     "@typescript-eslint/eslint-plugin": "^5.46.1",
     "@typescript-eslint/parser": "^5.46.1",
     "clean-package": "^2.2.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
     "esbuild": "0.15.5",
     "esbuild-plugin-ignore": "1.1.1",
     "eslint": "^7.19.0",
@@ -69,6 +72,11 @@
     "ts-node": "10.9.1",
     "tsc-alias": "1.8.8",
     "typedoc": "^0.25.11"
+  },
+  "resolutions": {
+    "wrap-ansi": "7.0.0",
+    "strip-ansi": "6.0.1",
+    "string-width": "4.2.3"
   },
   "lint-staged": {
     "*.{js,ts}": [

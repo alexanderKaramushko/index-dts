@@ -1,6 +1,9 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 export const a = 1;
 
-export function foo() {
-  // eslint-disable-next-line no-console
-  console.log(a);
-}
+export * from './cli';
+export * from './core';

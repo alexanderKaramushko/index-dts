@@ -1,4 +1,4 @@
-import { a } from '.';
+import { a } from './index';
 
 describe('Test index', () => {
   it('should test a', () => {

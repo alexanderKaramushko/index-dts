@@ -6,6 +6,7 @@ import { typeScriptDeclarationsPlugin } from './plugins';
 
 const options = {
   entryPoints: ['./lib/index.ts'],
+  platform: 'node',
   outdir: 'dist',
   bundle: true,
   watch: false,

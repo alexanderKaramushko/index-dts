@@ -2,4 +2,6 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const lib = require('./dist/index');
 
-lib.foo();
+const CLI = new lib.CLIStorage();
+
+CLI.logArgs();
